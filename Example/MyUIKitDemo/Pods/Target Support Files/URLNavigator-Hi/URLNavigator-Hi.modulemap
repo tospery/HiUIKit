@@ -1,0 +1,6 @@
+framework module URLNavigator_Hi {
+  umbrella header "URLNavigator-Hi-umbrella.h"
+
+  export *
+  module * { export * }
+}

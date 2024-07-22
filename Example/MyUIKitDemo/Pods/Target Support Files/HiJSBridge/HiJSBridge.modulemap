@@ -1,0 +1,6 @@
+framework module HiJSBridge {
+  umbrella header "HiJSBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

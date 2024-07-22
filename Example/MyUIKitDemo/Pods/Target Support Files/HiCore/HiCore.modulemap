@@ -1,0 +1,6 @@
+framework module HiCore {
+  umbrella header "HiCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

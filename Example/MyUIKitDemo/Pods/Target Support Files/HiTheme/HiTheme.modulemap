@@ -1,0 +1,6 @@
+framework module HiTheme {
+  umbrella header "HiTheme-umbrella.h"
+
+  export *
+  module * { export * }
+}

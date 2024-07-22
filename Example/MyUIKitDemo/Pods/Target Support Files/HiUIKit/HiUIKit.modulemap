@@ -1,0 +1,6 @@
+framework module HiUIKit {
+  umbrella header "HiUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module HiNav {
+  umbrella header "HiNav-umbrella.h"
+
+  export *
+  module * { export * }
+}

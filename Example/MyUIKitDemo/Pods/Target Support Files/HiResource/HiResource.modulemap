@@ -1,0 +1,6 @@
+framework module HiResource {
+  umbrella header "HiResource-umbrella.h"
+
+  export *
+  module * { export * }
+}
