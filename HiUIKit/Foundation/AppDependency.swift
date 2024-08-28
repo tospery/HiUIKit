@@ -1,6 +1,6 @@
 //
 //  AppDependency.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by liaoya on 2022/7/19.
 //
@@ -78,14 +78,14 @@ open class AppDependency {
         // 设置
         self.setupData()
         // 日志
-        logger.print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "", module: .hiIOS)
-        logger.print("运行环境: \(UIApplication.shared.inferredEnvironment)", module: .hiIOS)
-        logger.print("设备型号: \(UIDevice.current.modelName)", module: .hiIOS)
-        logger.print("硬件标识: \(UIDevice.current.uuid)", module: .hiIOS)
-        logger.print("系统版本: \(UIDevice.current.systemVersion)", module: .hiIOS)
-        logger.print("屏幕尺寸: \(UIScreen.main.bounds.size)", module: .hiIOS)
-        logger.print("安全区域: \(safeArea)", module: .hiIOS)
-        logger.print("状态栏(\(statusBarHeightConstant))|导航栏(\(navigationBarHeight))|标签栏(\(tabBarHeight))", module: .hiIOS)
+        logger.print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "", module: .HiUIKit)
+        logger.print("运行环境: \(UIApplication.shared.inferredEnvironment)", module: .HiUIKit)
+        logger.print("设备型号: \(UIDevice.current.modelName)", module: .HiUIKit)
+        logger.print("硬件标识: \(UIDevice.current.uuid)", module: .HiUIKit)
+        logger.print("系统版本: \(UIDevice.current.systemVersion)", module: .HiUIKit)
+        logger.print("屏幕尺寸: \(UIScreen.main.bounds.size)", module: .HiUIKit)
+        logger.print("安全区域: \(safeArea)", module: .HiUIKit)
+        logger.print("状态栏(\(statusBarHeightConstant))|导航栏(\(navigationBarHeight))|标签栏(\(tabBarHeight))", module: .HiUIKit)
     }
     
     open func application(_ application: UIApplication, leaveDidFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {

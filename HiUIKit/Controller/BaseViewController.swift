@@ -1,6 +1,6 @@
 //
 //  BaseViewController.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by 杨建祥 on 2022/7/19.
 //
@@ -127,7 +127,7 @@ open class BaseViewController: UIViewController {
     
     deinit {
         #if DEBUG
-        logger.print("\(self.className)已销毁！！！", module: .hiIOS)
+        logger.print("\(self.className)已销毁！！！", module: .HiUIKit)
         #endif
     }
     
@@ -226,7 +226,7 @@ open class BaseViewController: UIViewController {
     ) {
 //        if result != nil && type != nil {
 //#if DEBUG
-//            logger.print("\(self.className)返回值：\(result!)", module: .hiIOS)
+//            logger.print("\(self.className)返回值：\(result!)", module: .HiUIKit)
 //#endif
 //            self.callback?.onNext(result!)
 //        }
@@ -241,7 +241,7 @@ open class BaseViewController: UIViewController {
     open func didBack(type: BackType? = nil, result: Any? = nil) {
 //        if type != nil {
 //#if DEBUG
-//            logger.print("\(self.className)返回：\(type)(\(data))", module: .hiIOS)
+//            logger.print("\(self.className)返回：\(type)(\(data))", module: .HiUIKit)
 //#endif
 //            self.callback?.onNext(BackResult(type: type, data: data))
 //        }

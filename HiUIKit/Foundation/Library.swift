@@ -1,6 +1,6 @@
 //
 //  Library.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by liaoya on 2022/7/19.
 //
@@ -35,7 +35,7 @@ final public class Library {
     public func basic() {
         logType.addDestination(ConsoleDestination.init())
         logType.addDestination(FileDestination.init())
-        ReachManager.shared.start()
+        ReachSubjecter.shared.start()
     }
     
 }

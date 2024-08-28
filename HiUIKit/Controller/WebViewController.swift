@@ -1,6 +1,6 @@
 //
 //  WebViewController.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by 杨建祥 on 2022/7/19.
 //
@@ -183,7 +183,7 @@ open class WebViewController: ScrollViewController, View {
 extension WebViewController: WKNavigationDelegate {
 
     open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        logger.print("网址: \(navigationAction.request.url?.absoluteString ?? "")", module: .hiIOS)
+        logger.print("网址: \(navigationAction.request.url?.absoluteString ?? "")", module: .HiUIKit)
         decisionHandler(.allow)
     }
     

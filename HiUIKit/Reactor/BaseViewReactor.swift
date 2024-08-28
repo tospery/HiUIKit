@@ -1,6 +1,6 @@
 //
 //  BaseViewReactor.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by 杨建祥 on 2022/7/19.
 //
@@ -34,7 +34,7 @@ open class BaseViewReactor: NSObject, ReactorType {
     
     deinit {
         #if DEBUG
-        logger.print("\(self.className)已销毁！！！", module: .hiIOS)
+        logger.print("\(self.className)已销毁！！！", module: .HiUIKit)
         #endif
     }
     

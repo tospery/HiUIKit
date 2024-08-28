@@ -1,6 +1,6 @@
 //
 //  UIImageView+Hi.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by 杨建祥 on 2024/4/29.
 //

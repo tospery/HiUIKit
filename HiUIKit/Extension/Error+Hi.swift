@@ -1,6 +1,6 @@
 //
 //  Error+Hi.swift
-//  HiIOS
+//  HiUIKit
 //
 //  Created by 杨建祥 on 2022/7/19.
 //
@@ -36,7 +36,7 @@ extension HiError {
 
 extension NSError: HiErrorCompatible {
     public var hiError: HiError {
-        logger.print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)", module: .hiIOS)
+        logger.print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)", module: .HiUIKit)
         
         var message = self.localizedDescription
         if let msg1 = self.userInfo["message"] as? String, msg1.isNotEmpty {
