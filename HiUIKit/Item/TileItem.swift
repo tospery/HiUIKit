@@ -12,7 +12,7 @@ import ReactorKit
 import URLNavigator_Hi
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 import HiTheme
 import HiNav
 

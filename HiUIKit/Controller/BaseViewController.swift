@@ -12,7 +12,7 @@ import NSObject_Rx
 import SwifterSwift
 import URLNavigator_Hi
 import HiCore
-import HiDomain
+import HiBase
 import HiTheme
 import HiNav
 

@@ -13,7 +13,7 @@ import ReactorKit
 import URLNavigator_Hi
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 
 open class BindCollectionViewReactor: CollectionViewReactor, ReactorKit.Reactor {
 
@@ -64,7 +64,7 @@ open class BindCollectionViewReactor: CollectionViewReactor, ReactorKit.Reactor 
     public let url: String
     public var initialState = State()
 
-    required public init(_ provider: HiDomain.ProviderProtocol, _ parameters: [String: Any]?) {
+    required public init(_ provider: HiBase.ProviderProtocol, _ parameters: [String: Any]?) {
         self.url = parameters?.string(for: Parameter.url) ?? ""
         super.init(provider, parameters)
         self.initialState = State(

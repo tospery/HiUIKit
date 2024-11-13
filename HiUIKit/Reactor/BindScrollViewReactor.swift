@@ -13,7 +13,7 @@ import URLNavigator_Hi
 import RxDataSources
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 
 open class BindScrollViewReactor: ScrollViewReactor, ReactorKit.Reactor {
 
@@ -54,7 +54,7 @@ open class BindScrollViewReactor: ScrollViewReactor, ReactorKit.Reactor {
     
     public var initialState = State()
 
-    required public init(_ provider: HiDomain.ProviderProtocol, _ parameters: [String: Any]?) {
+    required public init(_ provider: HiBase.ProviderProtocol, _ parameters: [String: Any]?) {
         super.init(provider, parameters)
         self.initialState = State(
             title: self.title

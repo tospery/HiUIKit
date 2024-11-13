@@ -17,7 +17,7 @@ import ObjectMapper
 import Kingfisher
 import RxDataSources
 import HiCore
-import HiDomain
+import HiBase
 import HiTheme
 import HiNav
 

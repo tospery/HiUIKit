@@ -10,7 +10,7 @@
 //import RxCocoa
 //import ObjectMapper
 //import HiCore
-//import HiDomain
+//import HiBase
 //
 //private var subjects: [String: Any] = [:]
 //

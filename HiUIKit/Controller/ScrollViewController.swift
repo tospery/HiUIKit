@@ -14,7 +14,7 @@ import BonMot
 import MJRefresh
 import SwifterSwift
 import HiCore
-import HiDomain
+import HiBase
 import HiTheme
 
 open class ScrollViewController: BaseViewController {

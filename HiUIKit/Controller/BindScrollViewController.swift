@@ -15,7 +15,7 @@ import ReactorKit
 import URLNavigator_Hi
 import ObjectMapper
 import Kingfisher
-import HiDomain
+import HiBase
 import HiCore
 
 open class BindScrollViewController: ScrollViewController, ReactorKit.View {

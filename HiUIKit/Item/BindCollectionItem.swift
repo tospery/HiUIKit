@@ -11,7 +11,7 @@ import RxCocoa
 import ReactorKit
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 
 open class BindCollectionItem: BaseCollectionItem, ReactorKit.Reactor {
     

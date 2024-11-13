@@ -17,7 +17,7 @@ import Alamofire
 import Moya
 import HiCore
 import HiNet
-import HiDomain
+import HiBase
 
 extension HiError {
 
@@ -204,20 +204,6 @@ extension MoyaError: HiErrorCompatible {
         }
     }
 }
-
-
-
-//public enum HiNetError: Error {
-//    case unknown
-//    case dataInvalid
-//    case listIsEmpty
-////    case networkNotConnected
-////    case networkNotReachable
-//    case userNotLoginedIn   // 对应HTTP的401
-//    case userLoginExpired   // 将自己服务器的错误码转换为该值
-//    case server(Int, String?, [String: Any]?)
-//}
-
 
 extension HiNetError: HiErrorCompatible {
     public var hiError: HiError {

@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 
 // MARK: - 存储协议
 public protocol Storable: ModelType {

@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 import HiCore
-import HiDomain
+import HiBase
 
 open class ModelViewReactor: ReactorType, WithModel, CustomStringConvertible {
 

@@ -13,7 +13,7 @@ import URLNavigator_Hi
 import ReactorKit
 import SwifterSwift
 import HiCore
-import HiDomain
+import HiBase
 import HiTheme
 import HiNav
 import HiJSBridge

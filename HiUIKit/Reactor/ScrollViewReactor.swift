@@ -8,7 +8,7 @@
 import Foundation
 import URLNavigator_Hi
 import HiCore
-import HiDomain
+import HiBase
 
 open class ScrollViewReactor: BaseViewReactor {
     

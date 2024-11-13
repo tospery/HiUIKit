@@ -12,7 +12,7 @@ import SwifterSwift
 import RxRelay
 import HiCore
 import HiNav
-import HiDomain
+import HiBase
 
 public var gDisposeBag = DisposeBag()
 public let profileService = BehaviorRelay<(any ProfileType)?>(value: nil)

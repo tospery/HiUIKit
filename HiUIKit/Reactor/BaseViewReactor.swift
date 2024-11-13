@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import URLNavigator_Hi
 import HiCore
-import HiDomain
+import HiBase
 import HiNav
 
 open class BaseViewReactor: NSObject, ReactorType {

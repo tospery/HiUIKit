@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import ObjectMapper
-import HiDomain
+import HiBase
 import HiCore
 import HiTheme
 

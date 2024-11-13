@@ -8,7 +8,7 @@
 import Foundation
 import ReactorKit
 import HiCore
-import HiDomain
+import HiBase
 
 open class WebViewReactor: ScrollViewReactor, ReactorKit.Reactor {
     
