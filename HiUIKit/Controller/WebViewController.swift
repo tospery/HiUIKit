@@ -183,7 +183,7 @@ open class WebViewController: ScrollViewController, View {
 extension WebViewController: WKNavigationDelegate {
 
     open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        logger.print("网址: \(navigationAction.request.url?.absoluteString ?? "")", module: .HiUIKit)
+        logger.print("网址: \(navigationAction.request.url?.absoluteString ?? "")", module: .hiUIKit)
         decisionHandler(.allow)
     }
     

@@ -36,7 +36,7 @@ extension HiError {
 
 extension NSError: HiErrorCompatible {
     public var hiError: HiError {
-        logger.print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)", module: .HiUIKit)
+        logger.print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)", module: .hiUIKit)
         
         var message = self.localizedDescription
         if let msg1 = self.userInfo["message"] as? String, msg1.isNotEmpty {
