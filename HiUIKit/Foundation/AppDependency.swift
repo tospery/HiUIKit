@@ -78,14 +78,14 @@ open class AppDependency {
         // 设置
         self.setupData()
         // 日志
-        logger.print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "", module: .hiUIKit)
-        logger.print("运行环境: \(UIApplication.shared.inferredEnvironment)", module: .hiUIKit)
-        logger.print("设备型号: \(UIDevice.current.modelName)", module: .hiUIKit)
-        logger.print("硬件标识: \(UIDevice.current.uuid)", module: .hiUIKit)
-        logger.print("系统版本: \(UIDevice.current.systemVersion)", module: .hiUIKit)
-        logger.print("屏幕尺寸: \(UIScreen.main.bounds.size)", module: .hiUIKit)
-        logger.print("安全区域: \(safeArea)", module: .hiUIKit)
-        logger.print("状态栏(\(statusBarHeightConstant))|导航栏(\(navigationBarHeight))|标签栏(\(tabBarHeight))", module: .hiUIKit)
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "")
+        print("运行环境: \(UIApplication.shared.inferredEnvironment)")
+        print("设备型号: \(UIDevice.current.modelName)")
+        print("硬件标识: \(UIDevice.current.uuid)")
+        print("系统版本: \(UIDevice.current.systemVersion)")
+        print("屏幕尺寸: \(UIScreen.main.bounds.size)")
+        print("安全区域: \(safeArea)")
+        print("状态栏(\(statusBarHeightConstant))|导航栏(\(navigationBarHeight))|标签栏(\(tabBarHeight))")
     }
     
     open func application(_ application: UIApplication, leaveDidFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {

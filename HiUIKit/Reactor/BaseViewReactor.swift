@@ -34,7 +34,7 @@ open class BaseViewReactor: NSObject, ReactorType {
     
     deinit {
         #if DEBUG
-        logger.print("\(self.className)已销毁！！！", module: .hiUIKit)
+        print("\(self.className)已销毁！！！")
         #endif
     }
     

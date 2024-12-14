@@ -105,11 +105,11 @@ open class BindScrollViewController: ScrollViewController, ReactorKit.View {
     
     // MARK: - handle
     open func handleProfile(profile: (any ProfileType)?) {
-        logger.print("handleProfile: (\(self.reactor?.host ?? ""), \(self.reactor?.path ?? ""))")
+        print("handleProfile: (\(self.reactor?.host ?? ""), \(self.reactor?.path ?? ""))")
     }
     
     open func handleLogin(isLogined: Bool?) {
-        logger.print("\(#function), (\(self.reactor?.host ?? ""), \(self.reactor?.path ?? "")): \(isLogined ?? false)")
+        print("\(#function), (\(self.reactor?.host ?? ""), \(self.reactor?.path ?? "")): \(isLogined ?? false)")
         MainScheduler.asyncInstance.schedule(()) { [weak self] _ -> Disposable in
             guard let `self` = self else { fatalError() }
             self.reactor?.action.onNext(.reload)

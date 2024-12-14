@@ -8,7 +8,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import SwiftyBeaver
 import HiCore
 import HiNet
 
@@ -33,8 +32,8 @@ final public class Library {
     }
     
     public func basic() {
-        logType.addDestination(ConsoleDestination.init())
-        logType.addDestination(FileDestination.init())
+//        logType.addDestination(ConsoleDestination.init())
+//        logType.addDestination(FileDestination.init())
         ReachSubjecter.shared.start()
     }
     

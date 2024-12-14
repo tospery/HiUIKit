@@ -127,7 +127,7 @@ open class BaseViewController: UIViewController {
     
     deinit {
         #if DEBUG
-        logger.print("\(self.className)已销毁！！！", module: .hiUIKit)
+        print("\(self.className)已销毁！！！")
         #endif
     }
     
@@ -226,7 +226,7 @@ open class BaseViewController: UIViewController {
     ) {
 //        if result != nil && type != nil {
 //#if DEBUG
-//            logger.print("\(self.className)返回值：\(result!)", module: .hiUIKit)
+//            print("\(self.className)返回值：\(result!)")
 //#endif
 //            self.callback?.onNext(result!)
 //        }
@@ -241,7 +241,7 @@ open class BaseViewController: UIViewController {
     open func didBack(type: BackType? = nil, result: Any? = nil) {
 //        if type != nil {
 //#if DEBUG
-//            logger.print("\(self.className)返回：\(type)(\(data))", module: .hiUIKit)
+//            print("\(self.className)返回：\(type)(\(data))")
 //#endif
 //            self.callback?.onNext(BackResult(type: type, data: data))
 //        }

@@ -36,7 +36,7 @@ extension HiError {
 
 extension NSError: HiErrorCompatible {
     public var hiError: HiError {
-        logger.print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)", module: .hiUIKit)
+        print("NSError转换-> \(self.domain), \(self.code), \(self.localizedDescription)")
         
         var message = self.localizedDescription
         if let msg1 = self.userInfo["message"] as? String, msg1.isNotEmpty {
@@ -77,7 +77,7 @@ extension NSError: HiErrorCompatible {
             // NSURLErrorCannotDecodeContentData        -1016
             // NSURLErrorCannotParseResponse            -1017
             // -1202（此服务器的证书无效。）
-            // logger.print("看看错误码: \(NSURLErrorFileDoesNotExist)")
+            // print("看看错误码: \(NSURLErrorFileDoesNotExist)")
 
             if self.code == -1020 {
                 return .networkNotConnected
