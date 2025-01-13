@@ -301,11 +301,11 @@ open class BaseViewController: UIViewController {
                 if scrollViewController.isLoading {
                     return
                 } else if scrollViewController.isRefreshing {
-                    if error == .listIsEmpty {
+                    if error == .dataIsEmpty {
                         return
                     }
                 } else if scrollViewController.isLoadingMore {
-                    if error == .listIsEmpty {
+                    if error == .dataIsEmpty {
                         return
                     }
                 }

@@ -25,7 +25,7 @@ extension HiError {
         switch self {
         case .networkNotConnected, .networkNotReachable: return UIImage.networkError
         case .server: return UIImage.serverError
-        case .listIsEmpty: return UIImage.emptyError
+        case .dataIsEmpty: return UIImage.emptyError
         case .userNotLoginedIn: return UIImage.userNotLoginedInError
         case .userLoginExpired: return UIImage.userLoginExpiredError
         default: return UIImage.serverError
@@ -85,7 +85,7 @@ extension NSError: HiErrorCompatible {
             // -1005 ~ -999
             if self.code >= NSURLErrorNetworkConnectionLost &&
                 self.code <= NSURLErrorCancelled {
-                return .server(ErrorCode.serverUnableConnect, message, self.userInfo)
+                return .networkNotConnected
             }
             if self.code == NSURLErrorCannotParseResponse {
                 return .dataInvalid
@@ -97,12 +97,12 @@ extension NSError: HiErrorCompatible {
             return .networkNotConnected
         } else {
             if self.code == 500 {
-                return .server(ErrorCode.serverInternalError, message, self.userInfo)
+                return .networkNotReachable
             } else if self.code == 401 {
                 return .userNotLoginedIn
             }
         }
-        return .server(ErrorCode.nserror, message, self.userInfo)
+        return .app(self.domain, self.code, message, self.userInfo)
     }
 }
 
@@ -110,9 +110,9 @@ extension ASWebAuthenticationSessionError: HiErrorCompatible {
     public var hiError: HiError {
         switch self.code {
         case .canceledLogin:
-            return .none
+            return .cancel
         default:
-            return .app(ErrorCode.asError, self.localizedDescription, nil)
+            return .app(ASWebAuthenticationSessionErrorDomain, self.code.rawValue, self.localizedDescription, nil)
         }
     }
 }
@@ -121,9 +121,9 @@ extension SKError: HiErrorCompatible {
     public var hiError: HiError {
         switch self.code {
         case .paymentCancelled:
-            return .none
+            return .cancel
         default:
-            return .app(ErrorCode.skerror, self.localizedDescription, nil)
+            return .app(SKErrorDomain, self.code.rawValue, self.localizedDescription, nil)
         }
     }
 }
@@ -133,7 +133,7 @@ extension RxError: HiErrorCompatible {
         switch self {
         case .unknown: return .unknown
         case .timeout: return .timeout
-        default: return .app(ErrorCode.rxerror, self.localizedDescription, nil)
+        default: return .app("RxErrorDomain", 0, self.localizedDescription, nil)
         }
     }
 }
@@ -141,7 +141,7 @@ extension RxError: HiErrorCompatible {
 extension RxOptionalError: HiErrorCompatible {
     public var hiError: HiError {
         switch self {
-        case .emptyOccupiable: return .listIsEmpty
+        case .emptyOccupiable: return .dataIsEmpty
         case .foundNilWhileUnwrappingOptional: return .dataInvalid
         }
     }
@@ -155,7 +155,7 @@ extension AFError: HiErrorCompatible {
         case let .sessionTaskFailed(error):
             return error.asHiError
         default:
-            return .server(ErrorCode.aferror, self.localizedDescription, nil)
+            return .app("AFErrorDomain", 0, self.localizedDescription, nil)
         }
     }
 }
@@ -172,10 +172,10 @@ extension KingfisherError: HiErrorCompatible {
                     nil
                 )
             default:
-                return .server(ErrorCode.kfError, self.localizedDescription, nil)
+                return .app("KingfisherErrorDomain", 0, self.localizedDescription, nil)
             }
         default:
-            return .server(ErrorCode.kfError, self.localizedDescription, nil)
+            return .app("KingfisherErrorDomain", 0, self.localizedDescription, nil)
         }
     }
 }
@@ -198,9 +198,9 @@ extension MoyaError: HiErrorCompatible {
             }
             return .server(response.statusCode, response.data.string(encoding: .utf8), nil)
         case .jsonMapping:
-            return .server(ErrorCode.moyaError, self.localizedDescription, nil)
+            return .dataInvalid
         default:
-            return .server(ErrorCode.moyaError, self.localizedDescription, nil)
+            return .app("MoyaErrorDomain", 0, self.localizedDescription, nil)
         }
     }
 }
@@ -210,7 +210,7 @@ extension HiNetError: HiErrorCompatible {
         switch self {
         case .unknown: return .unknown
         case .dataInvalid: return .dataInvalid
-        case .listIsEmpty: return .listIsEmpty
+        case .dataIsEmpty: return .dataIsEmpty
         case .userNotLoginedIn: return .userNotLoginedIn
         case .userLoginExpired: return .userLoginExpired
         case let .server(code, message, data):  return .server(code, message, data)

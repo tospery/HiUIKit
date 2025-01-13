@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   
   s.source_files = 'HiUIKit/**/*'
   s.dependency 'HiCore', '~> 1.0'
-  s.dependency 'HiNav', '~> 1.0'
-  s.dependency 'HiNet', '~> 1.0'
+  s.dependency 'HiNav/RxSwift', '~> 1.0'
+  s.dependency 'HiNet/RxSwift', '~> 1.0'
   s.dependency 'HiTheme', '~> 1.0'
   s.dependency 'HiResource', '~> 1.0'
   s.dependency 'HiJSBridge', '~> 1.0'

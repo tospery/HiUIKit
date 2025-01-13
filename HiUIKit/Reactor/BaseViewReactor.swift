@@ -15,8 +15,8 @@ import HiNav
 
 open class BaseViewReactor: NSObject, ReactorType {
     
-    public let host: HiNav.Host
-    public let path: HiNav.Path?
+    public let host: HiNavHost
+    public let path: HiNavPath?
     public let provider: ProviderProtocol
     public weak var navigator: NavigatorProtocol!
     public var parameters: [String: Any]
