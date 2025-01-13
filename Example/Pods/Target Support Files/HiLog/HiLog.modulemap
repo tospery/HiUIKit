@@ -1,0 +1,6 @@
+framework module HiLog {
+  umbrella header "HiLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

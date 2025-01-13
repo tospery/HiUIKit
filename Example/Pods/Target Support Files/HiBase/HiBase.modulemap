@@ -1,0 +1,6 @@
+framework module HiBase {
+  umbrella header "HiBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

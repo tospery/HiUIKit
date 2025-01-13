@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HiUIKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'iOS App Framework.'
   s.description      = <<-DESC
 						iOS App Framework using Swift.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.swift_version = '5.3'
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '16.0'
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
   
   s.source_files = 'HiUIKit/**/*'

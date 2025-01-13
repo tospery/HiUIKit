@@ -1,0 +1,218 @@
+PODS:
+  - Alamofire (5.10.2)
+  - BonMot (6.1.3)
+  - DeviceKit (5.5.0)
+  - Differentiator (5.0.0)
+  - DZNEmptyDataSet (1.8.1)
+  - FCUUID (1.3.1):
+    - UICKeyChainStore (~> 2.1.0)
+  - HiBase (1.0.2):
+    - ObjectMapper (~> 4.0)
+    - SwifterSwift/Foundation (~> 6.0)
+    - SwifterSwift/SwiftStdlib (~> 6.0)
+  - HiCore (1.0.10):
+    - DeviceKit (~> 5.0)
+    - FCUUID (~> 1.0)
+    - HiBase (~> 1.0)
+    - HiLog/Core (~> 1.0)
+    - SwifterSwift/CoreGraphics (~> 6.0)
+    - SwifterSwift/UIKit (~> 6.0)
+  - HiJSBridge (1.0.0)
+  - HiLog/Core (1.0.1)
+  - HiNav/Core (1.0.3):
+    - HiBase (~> 1.0)
+    - SwifterSwift/UIKit (~> 6.0)
+  - HiNav/RxSwift (1.0.3):
+    - HiNav/Core
+    - RxSwift (~> 6.0)
+    - URLNavigator-Hi (= 2.5.1-v1)
+  - HiNet/Core (1.0.5):
+    - Moya/Core (~> 15.0)
+    - ObjectMapper (~> 4.0)
+  - HiNet/RxSwift (1.0.5):
+    - HiNet/Core
+    - Moya/RxSwift (~> 15.0)
+    - RxRelay (~> 6.0)
+  - HiResource (1.0.2)
+  - HiTheme (1.0.1):
+    - RxTheme (~> 6.0)
+    - SwifterSwift/UIKit (~> 6.0)
+  - HiUIKit (1.0.1):
+    - BonMot (~> 6.0)
+    - DZNEmptyDataSet (~> 1.0)
+    - HiCore (~> 1.0)
+    - HiJSBridge (~> 1.0)
+    - HiNav/RxSwift (~> 1.0)
+    - HiNet/RxSwift (~> 1.0)
+    - HiResource (~> 1.0)
+    - HiTheme (~> 1.0)
+    - Kingfisher (~> 7.0)
+    - MJRefresh (~> 3.0)
+    - "NSObject+Rx (~> 5.0)"
+    - ReactorKit (~> 3.0)
+    - RxDataSources (~> 5.0)
+    - RxOptional (~> 5.0)
+    - RxSwiftExt (~> 6.0)
+    - RxViewController (~> 2.0)
+    - SwifterSwift (~> 6.0)
+    - TTTAttributedLabel (~> 2.0)
+  - Kingfisher (7.12.0)
+  - MJRefresh (3.7.9)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - ObjectMapper (4.4.2)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.8.0):
+    - RxRelay (= 6.8.0)
+    - RxSwift (= 6.8.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.6):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.8.0):
+    - RxSwift (= 6.8.0)
+  - RxSwift (6.8.0)
+  - RxSwiftExt (6.2.1):
+    - RxSwiftExt/Core (= 6.2.1)
+    - RxSwiftExt/RxCocoa (= 6.2.1)
+  - RxSwiftExt/Core (6.2.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.2.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - RxTheme (6.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - SwifterSwift (6.2.0):
+    - SwifterSwift/AppKit (= 6.2.0)
+    - SwifterSwift/Combine (= 6.2.0)
+    - SwifterSwift/CoreAnimation (= 6.2.0)
+    - SwifterSwift/CoreGraphics (= 6.2.0)
+    - SwifterSwift/CoreLocation (= 6.2.0)
+    - SwifterSwift/CryptoKit (= 6.2.0)
+    - SwifterSwift/Dispatch (= 6.2.0)
+    - SwifterSwift/Foundation (= 6.2.0)
+    - SwifterSwift/HealthKit (= 6.2.0)
+    - SwifterSwift/MapKit (= 6.2.0)
+    - SwifterSwift/SceneKit (= 6.2.0)
+    - SwifterSwift/SpriteKit (= 6.2.0)
+    - SwifterSwift/StoreKit (= 6.2.0)
+    - SwifterSwift/SwiftStdlib (= 6.2.0)
+    - SwifterSwift/UIKit (= 6.2.0)
+    - SwifterSwift/WebKit (= 6.2.0)
+  - SwifterSwift/AppKit (6.2.0)
+  - SwifterSwift/Combine (6.2.0)
+  - SwifterSwift/CoreAnimation (6.2.0)
+  - SwifterSwift/CoreGraphics (6.2.0)
+  - SwifterSwift/CoreLocation (6.2.0)
+  - SwifterSwift/CryptoKit (6.2.0)
+  - SwifterSwift/Dispatch (6.2.0)
+  - SwifterSwift/Foundation (6.2.0)
+  - SwifterSwift/HealthKit (6.2.0)
+  - SwifterSwift/MapKit (6.2.0)
+  - SwifterSwift/SceneKit (6.2.0)
+  - SwifterSwift/SpriteKit (6.2.0)
+  - SwifterSwift/StoreKit (6.2.0)
+  - SwifterSwift/SwiftStdlib (6.2.0)
+  - SwifterSwift/UIKit (6.2.0)
+  - SwifterSwift/WebKit (6.2.0)
+  - TTTAttributedLabel (2.0.0)
+  - UICKeyChainStore (2.1.2)
+  - URLNavigator-Hi (2.5.1-v1)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - HiUIKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - BonMot
+    - DeviceKit
+    - Differentiator
+    - DZNEmptyDataSet
+    - FCUUID
+    - HiBase
+    - HiCore
+    - HiJSBridge
+    - HiLog
+    - HiNav
+    - HiNet
+    - HiResource
+    - HiTheme
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - "NSObject+Rx"
+    - ObjectMapper
+    - ReactorKit
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - RxViewController
+    - SwifterSwift
+    - TTTAttributedLabel
+    - UICKeyChainStore
+    - URLNavigator-Hi
+    - WeakMapTable
+
+EXTERNAL SOURCES:
+  HiUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  BonMot: 1534503509ef48d3c4d0fbec2d0ea35f2887b4ea
+  DeviceKit: d83e38ca196a4ebf0cc5f37d6f0316a24b794d5b
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  HiBase: 0465ebc8aa50c61c6d9284b08a7a0c9dd1ce6635
+  HiCore: c6584956e2757ee291d9be6730bf5112fe4fe5d2
+  HiJSBridge: 44de60d587b7c5dd218e7bccbfba08548afeee41
+  HiLog: 0f8d20ed7466f5bb47c07b1e7c993b67b35b845e
+  HiNav: 5d654aa4109d606ebd0b2ffa368f2d539803c49e
+  HiNet: 436692007fcb770a8631e3bac05e663ec5088b54
+  HiResource: a194ec2015fb00831c559acacc77bad607b16118
+  HiTheme: 90970dc9725435e7a50bb91948d50cc5fdf92596
+  HiUIKit: 71b12f4739c128b1f1fd3c40e0abb2c15eab260b
+  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  ObjectMapper: e6e4d91ff7f2861df7aecc536c92d8363f4c9677
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxCocoa: 2d33c1e1e5d66492052ad46b11024ae287572880
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxOptional: 337ba615992ffdeffea02d6a5a242358757bbfcd
+  RxRelay: 335c78b926a2aea8d863a6d25f1ed3b5ad8e8705
+  RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  RxSwiftExt: 43aaacb6a4d3c69c55e9d1cf4f79920043d13583
+  RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
+  SwifterSwift: dd00873fb09cde19da88bdb2878f9fe70fe27b0f
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  URLNavigator-Hi: 502e604c2656e9e78e17f17acfc808816c9bd713
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 931fc54c2f9b0dea18d29680e54f87dcbd8b72dc
+
+COCOAPODS: 1.16.2
