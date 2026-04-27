@@ -80,7 +80,7 @@ open class AppDependency {
         // 日志
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "")
         print("运行环境: \(UIApplication.shared.inferredEnvironment)")
-        print("设备型号: \(UIDevice.current.modelName)")
+        print("设备型号: \(UIDevice.current.deviceName)")
         print("硬件标识: \(UIDevice.current.uuid)")
         print("系统版本: \(UIDevice.current.systemVersion)")
         print("屏幕尺寸: \(UIScreen.main.bounds.size)")
